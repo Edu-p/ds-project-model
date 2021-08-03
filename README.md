@@ -1,6 +1,1 @@
-# DsEmProd
-# O NOME DO REPOSITORIO VAI SER ALGUMA COISA COMO PROJETO ROSSMANN, OU 
-# PREVISAO ROSSMANN, NAO VAI SER DS EM PROD
 
-
-## MODELO em produçao vai ser feito em outro repositorio
