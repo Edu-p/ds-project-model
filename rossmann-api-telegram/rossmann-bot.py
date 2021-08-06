@@ -62,7 +62,56 @@ def predict( data ):
 
     return d1
 
-pd.DataFrame( r.json(), columns=r.json()[0].keys() )
+def parse_message( message ):
+    chat_id = message['message']['chat']['id']
+    store_id = message['message']['text']
+
+    store_id = store_id.replace( '/', '' )
+
+    try:
+        store_id = int( store_id )
+    except ValueError:
+        store_id = 'error'
+
+
+
+    return chat_id, store_id
+
+# API initialize ( vamos criar um endpoint que vai transformar a mensagem de texto em um json que nosso modelo consegue trabalhar )
+app = Flask( __name__ )
+
+@app.route( '/', methods=['GET', 'POST'] )
+def index():
+    if request.method == 'POST':
+        message = request.get_json()
+
+        chat_id, store_id = parse_message( message )
+
+        if store_id != 'error':
+            # loading data
+            # prediction
+            # claculation
+            # send message
+        else:
+            send_message( chat_id, 'Invalid store id' )
+            return Response( 'OK', status=200 )
+
+    else:
+        return '<h1> Rossmann Telegram Edu-p BOT </h1>'
+
+if __name__ == 'main':
+    app.run( host='0.0.0.0', port=5000 )
+
+
+
+
+
+
+
+
+
+
+
 
 
 #
