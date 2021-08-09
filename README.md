@@ -7,7 +7,7 @@
 
 # 💎 Objeto de estudo
 
-Você recebe dados históricos de vendas de 1.115 lojas da Rossmann( a segunda maior rede de farmácias da Alemanha ). A tarefa é prever a coluna "Vendas" nas proximas seis semanas para o conjunto de teste.
+Você recebe dados históricos de vendas de 1.115 lojas da Rossmann( a segunda maior rede de farmácias da Alemanha ). A tarefa é prever a coluna "Vendas" nas proximas seis semanas para o conjunto de teste. Esse problema de negocio foi tirado do [kaggle](https://www.kaggle.com), de uma competiçao realizada em meados de 2015 => [link da competiçao](https://www.kaggle.com/c/rossmann-store-sales/overview)
 
 ![entrada-rossmann](https://user-images.githubusercontent.com/72039442/128021834-c36f75d8-b021-4d0d-8806-fc4d1e165f02.jpg)
 
@@ -23,32 +23,13 @@ Você recebe dados históricos de vendas de 1.115 lojas da Rossmann( a segunda m
 - Esse visa ajudar os proximos estudantes que passarem pelo curso "DS em produçao", com os codigos feitos em cada uma das aulas, com pequenas alteraçoes feitas por mim.
 - O obejtivo desse projeto não é de servir como um copy and paste, mas de um gabarito de alguem que ja passou por algum dos possiveis problemas enfrentados durante o curso do [Meigarom](https://www.instagram.com/meigarom/).
 
-
-
-- Exemplo de Dashboard => [Dashboard](https://house-rocket-dashanalysis.herokuapp.com)
-- Como esta distribuido:
-  - Resumo de cada uma delas:
-    - Aula 1:
-      - O que é um comando, interpretador, baixando IDE
-    - Aula 2:
-      - Como selecionar linhas e filtrar colunas
-      ![newplot (10)](https://user-images.githubusercontent.com/72039442/113594478-24709a80-960e-11eb-911c-f31dc3c6babf.png)
-    - Aula 3:
-      - Criar colunas novas, fazer combinaçao de colunas para gerar outra
-    - Aula 4:
-      - Como funciona e usa estrutura de controles
-      ![Hnet-image (1)](https://user-images.githubusercontent.com/72039442/113602093-8fbf6a00-9618-11eb-8b30-4829ac5eecf1.gif)
-    - Aula 5:
-      - Como deixar o codigo mais modular, padrao de codigo ETL
-    - Aula 6:
-      - Tipos de visualizaçao de dados, quais sao as melhores opçoes para cada cenario
-      ![newplot (9)](https://user-images.githubusercontent.com/72039442/113594475-23d80400-960e-11eb-89cf-55bf22be7804.png)
-    - Aula 7:
-      - Dando deploy em um projeto usando streamlit
-      ![Hnet com-image (3)](https://user-images.githubusercontent.com/72039442/113594160-b035f700-960d-11eb-8b77-39e0c3e82a9c.gif)
-    - Aula 8:
-      - O que é e como transformar nosso projeto em Projeto de portifolio
-      - O novo problema de negocio
+- Como esta estruturado:
+    - De forma semelhante à estrutura do repositorio do curso disponibilizado por [Meigarom](https://www.instagram.com/meigarom/), o repositorio tem 10 notebooks principais que foram feitos em cada modulo do programa. Eles sao acumulativos, por isso, um notebook de um modulo superior tem as mesmas etapas ja feitas do inferior.
+    - A pasta 'api' é destinada ao primeiro deploy do modelo final, no heroku, com a url => https://prediction-rossmann-v2.herokuapp.com/
+    - A pasta 'img' contem uma imagem de um mapa mental das hipoteses levantadas na etapa da análise exploratoria de dados do projeto 
+    - A pasta 'parameters' tem o modelo final e os scaler's necessarios para colocar o modelo em produçao
+    - A pasta 'datasets' contem os conjunto de dados disponibilizados no desafio no Kaggle
+    - A pasta 'rossmann-api-telegram' contem todo o codigo que fiz
 
 ---
 
