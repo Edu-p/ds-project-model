@@ -38,6 +38,7 @@ Você recebe dados históricos de vendas de 1.115 lojas da Rossmann( a segunda m
 
 - Foi utilizando o [Pycharm](https://www.jetbrains.com/pt-br/pycharm/) como IDE e o [Python 3.8](https://www.python.org/downloads/release/python-380/) como interpretador
 - Link para acessar os resultados pelo=> [conversar com bot no telegram](t.me/rossmann_pred_edu_bot)
+    - ![telegram-bot](https://user-images.githubusercontent.com/72039442/128722507-d8a02fcf-d363-430f-9e39-984a79aab36e.gif)
     - Para conseguir as previsoes das lojas, voce deve abrir a conversa com o "RossmannPrediction", pelo telegram, e digitar /numero_da_loja_desejada, que ele mandara o numero de identificaçao da loja para o algoritmo para fazer previsao em tempo real e devolver o resultado, depois das devidas manipulaçoes necessarias.
 
 
